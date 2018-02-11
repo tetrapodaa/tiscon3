@@ -63,22 +63,24 @@
                             <div class="field" th:classappend="${form.hasErrors('capital')} ? 'error'">
                                     <label>資本金</label>
                                 <select name="資本金">
-                                <option value="１千万円未満">１千万円未満 </option>
-                                <option value="１千万円以上５千万円未満 ">１千万円以上５千万円未満 </option>
-                                <option value="５千万円以上３億円未満 ">５千万円以上３億円未満 </option>
-                                <option value="３億円以上">３億円以上</option>
-                                <option value="その他">その他</option>
+                                <option value="999">１千万円未満 </option>
+                                <option value="4999 ">１千万円以上５千万円未満 </option>
+                                <option value="29999 ">５千万円以上３億円未満 </option>
+                                <option value="30000">３億円以上</option>
+                                <option value="0">その他</option>
                                 </select>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('companySize')} ? 'error'">
                                 <label>お勤め先の規模（従業員数）</label>
                                 <select name="お勤め先の規模（従業員数）">
-                                    <option value=""> </option>
-                                    <option value=" "> </option>
-                                    <option value=" "> </option>
-                                    <option value=""></option>
-                                    <option value=""></option>
+                                    <option value="9">１０名未満 </option>
+                                    <option value="29">１０名以上３０名未満 </option>
+                                    <option value="49">３０名以上５０名未満 </option>
+                                    <option value="99">５０名以上１００名未満</option>
+                                    <option value="499">１００名以上５００名未満</option>
+                                    <option value="500">５００名以上</option>
                                 </select>
+
 
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('department')} ? 'error'">
