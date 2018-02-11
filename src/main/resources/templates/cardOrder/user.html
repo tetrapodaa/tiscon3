@@ -116,20 +116,21 @@
                                 <input type="radio" name="job" value="他有職" th:checked="${form.job}=='他有職'"/>その他 (有職）
                                 <input type="radio" name="job" value="他無職" th:checked="${form.job}=='他無職'"/>その他（無職）<-->
                             </div>
-                            <select name="ご職業">
-                                <option value="経営自営"> 経営・自営業</option>
-                                <option value="会社員">会社員</option>
-                                <option value="派遣社員">契約・派遣社員</option>
-                                <option value="公務員">公務員</option>
-                                <option value="民間団体">民間団体</option>
-                                <option value="主婦">主婦</option>
-                                <option value="学生">学生</option>
-                                <option value="年金受給">年金受給者の方</option>
 
-                                <option value="パートアルバイト">パート・アルバイト</option>
-                                <option value="他有職">その他（有職）</option>
-                                <option value="他無職">その他（無職）</option>
-                            </select>
+                            </select><select name="ご職業">
+                            <option value="経営自営"> 経営・自営業</option>
+                            <option value="会社員">会社員</option>
+                            <option value="派遣社員">契約・派遣社員</option>
+                            <option value="公務員">公務員</option>
+                            <option value="民間団体">民間団体</option>
+                            <option value="主婦">主婦</option>
+                            <option value="学生">学生</option>
+                            <option value="年金受給">年金受給者の方</option>
+
+                            <option value="パートアルバイト">パート・アルバイト</option>
+                            <option value="他有職">その他（有職）</option>
+                            <option value="他無職">その他（無職）</option>
+                        </select>
 
                             <!--/*"お勤め先"の入力値を引き回すための隠し項目*/-->
                             <input type="hidden" name="employerName" th:value="${form.employerName}"/>

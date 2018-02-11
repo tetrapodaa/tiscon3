@@ -30,7 +30,6 @@ public class CardOrderController {
 
     @Inject
     private BeansConverter beans;
-
     private CardOrderDao cardOrderDao;
 
     @PostConstruct
