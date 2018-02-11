@@ -10,7 +10,7 @@ public class CardOrderForm extends FormBase {
     private static final long serialVersionUID = 1L;
 
     @NotBlank
-    @Size(max = 60)
+    @Size(max = 60, message = "お名前を正しく入力してください")
     private String kanjiName;
 
     @NotBlank
